@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Shell
+    x:Class="AdvancedDataBinding.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:AdvancedDataBinding"
+    Shell.FlyoutBehavior="Disabled"
+    Title="AdvancedDataBinding">
+
+    <TabBar>
+        <Tab Title="Rotation" Icon="xaml">
+            <ShellContent
+                Title="Rotation"
+                ContentTemplate="{DataTemplate local:RotationPage}" />
+        </Tab>
+        <Tab Title="Converter" Icon="xaml">
+            <ShellContent
+                Title="Converter"
+                ContentTemplate="{DataTemplate local:ConverterPage}" />
+        </Tab>
+    </TabBar>
+
+</Shell>
