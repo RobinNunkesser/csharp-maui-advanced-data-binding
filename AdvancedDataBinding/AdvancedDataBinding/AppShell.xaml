@@ -16,8 +16,8 @@
         </Tab>
         <Tab Title="Converter" Icon="xaml">
             <ShellContent
-                Title="Converter"
-                ContentTemplate="{DataTemplate local:ConverterPage}" />
+                x:Name="converterShellContent"
+                Title="Converter" />
         </Tab>
     </TabBar>
 
