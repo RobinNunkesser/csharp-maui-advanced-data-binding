@@ -1,12 +1,12 @@
-using Microsoft.Maui.Controls;
+using AdvancedDataBinding.ViewModels;
 
 namespace AdvancedDataBinding;
 
 public partial class ConverterPage : ContentPage
 {
-    public ConverterPage()
+    public ConverterPage(ConverterViewModel vm)
     {
         InitializeComponent();
-        Editor.Text = string.Empty;
+        BindingContext = vm;
     }
 }
