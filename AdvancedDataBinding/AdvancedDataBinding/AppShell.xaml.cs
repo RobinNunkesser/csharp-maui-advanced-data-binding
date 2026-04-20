@@ -2,8 +2,9 @@
 
 public partial class AppShell : Shell
 {
-    public AppShell()
+    public AppShell(ConverterPage converterPage)
     {
         InitializeComponent();
+        converterShellContent.Content = converterPage;
     }
 }
